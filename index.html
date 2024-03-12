@@ -1,1 +1,110 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DP Gantter Pane Add-in</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/. -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"/>
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="ms-font-m ms-welcome ms-Fabric">
+    <header class="ms-welcome__header ms-bgColor-neutralLighter">
+        <h2 class="ms-font-xl">Manage your project here!</h2>
+        <h2 class="ms-font-l" id="message"></h2>
+    </header>
+    <section id="sideload-msg" class="ms-welcome__main">
+        <h2 class="ms-font-xl">Please <a target="_blank" href="https://learn.microsoft.com/office/dev/add-ins/testing/test-debug-office-add-ins#sideload-an-office-add-in-for-testing">sideload</a> your add-in to see app body.</h2>
+    </section>
+    <main id="app-body" class="ms-welcome__main" style="display: none;">
+
+        <div class="ms-font-l" >
+            Redraw project  
+            <input type="image" width="30" height="30" id="image_draw" src="../../assets/draw.png" alt="Submit" >
+        </div>
+        
+        <p></p>
+        <div class="ms-font-l" >
+            Move lines up  
+            <input type="image" width="30" height="30" id="image_move_up"   src="../../assets/move_up.png" alt="Submit" >
+            or move_down
+            <input type="image" width="30" height="30" id="image_move_down" src="../../assets/move_down.png" alt="Submit" >
+        </div>
+        <p></p>
+        <div class="ms-font-l" >
+            Move columns left 
+            <input type="image" width="30" height="30" id="image_move_left" src="../../assets/move_left.png" alt="Submit" >
+            or right
+            <input type="image" width="30" height="30" id="image_move_right" src="../../assets/move_right.png" alt="Submit" >
+        </div>
+
+       <p></p>
+
+        <div class="ms-font-l" >
+            Task indent  
+            <input type="image" width="30" height="30" id="image_indent" src="../../assets/indent.png" alt="Submit" >
+            or outdent
+            <input type="image" width="30" height="30" id="image_outdent" src="../../assets/outdent.png" alt="Submit" >
+        </div>
+
+        <p></p>
+         <div class="ms-font-l" >
+             Phase collapse  
+             <input type="image" width="30" height="30" id="image_collapse" src="../../assets/collapse.png" alt="Submit" >
+             or expand
+             <input type="image" width="30" height="30" id="image_expand" src="../../assets/expand.png" alt="Submit" >
+         </div>
+
+         <p></p>
+          <div class="ms-font-l" >
+              Grid lines on  
+              <input type="image" width="30" height="30" id="image_grid" src="../../assets/grid.svg" alt="Submit" >
+              or off
+              <input type="image" width="30" height="30" id="image_no_grid" src="../../assets/no_grid.svg" alt="Submit" >
+          </div>
+
+          <p></p>
+
+         <p></p>
+          <div class="ms-font-l" >
+              Copy format  
+              <input type="image" width="30" height="30" id="image_take_style" src="../../assets/take_style.svg" alt="Submit" >
+          </div>
+
+          <p></p>
+           <div class="ms-font-l" >
+               Set color  
+               <input type="image" width="30" height="30" id="image_color" src="../../assets/color.svg" alt="Submit" >
+           </div>
+
+         <p></p>
+          <div class="ms-font-l">
+              Project settings  
+              <input type="image" width="30" height="30" id="settings" src="../../assets/settings.svg" alt="Submit" >
+          </div>
+
+          <p></p>
+           <div class="ms-font-l" >
+               Change timeline 
+               <input type="image" width="30" height="30" id="image_timeline" src="../../assets/timeline.svg" alt="Submit" >
+           </div>
+
+          <p></p>
+           <div class="ms-font-l" >
+               Start new planning
+               <input type="image" width="30" height="30" id="image_new" src="../../assets/new.svg" alt="Submit" >
+           </div>
+    </main>
+</body>
+
+</html>
+
