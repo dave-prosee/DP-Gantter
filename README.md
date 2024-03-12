@@ -4,7 +4,7 @@ Excel add in to create and manage Gantt charts
 Download the manifest file to sideload it (use home insert add in on a mac).
 Once the add in is accepted the add in will be loaded from the github page, so a web connection is necessary to use it.
 
-Some tips on usages:
+Some tips on usage:
 - there is a button for new plannings. Still to be improved, but it will give you an idea how to use the add in
 - for now, please use 100% zoom when (re-drawing)
 - on the left, from column T, there are some columns that are either mandatory or for the users. This way you can create a data set that is filterable by your own data. The mandatory columns are ID, Name, From (calculated), Until (calculated), Duration (input), Do not start before (input), Dependency (input), Responsible, Progress (for a progress bar) and Color / Task type. 
